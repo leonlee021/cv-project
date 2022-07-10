@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    align-items: center;
+    background-color: rgb(190, 190, 190);
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 500%;
+}
+
+#header-text{
+    text-shadow: 2px 2px 2px white;
+}
+
+#cv-wrapper{
+    width: 1000px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    background-color: white;
+    padding: 50px 0px;
+    height: 842px;
+    width: 595px;
+}
+
+.cv-header{
+    font-size: 1.5rem;
+}
+
+#cv-header{
+    display: block;
+    margin: 0 auto;
+}
+
+#cv-body{
+    display: block;
+    margin: 0 auto;
+}
+
+
+#cv-content{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    text-align: center;
+    font-family: serif;
+}
