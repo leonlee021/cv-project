@@ -5,6 +5,7 @@ export default function Education(){
         <>
             <input type="text" id = "school" name = "school" placeholder="School"/>
             <input type="text" id = "degree" name = "degree" placeholder="Degree"/>
+            <input type="text" id = "graduation" name = "graduation" placeholder="Graduation Date"/>
         </>
     )
 }
