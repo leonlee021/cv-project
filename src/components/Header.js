@@ -11,7 +11,6 @@ export default function Header(){
     )
 
     function handleChange(event){
-        console.log(event.target.value)
         const {name, value} = event.target
         setPersonalFormData(prevPersonalFormData => {
             return{
@@ -31,7 +30,7 @@ export default function Header(){
         <>
             <div id="cv-header" className = "cv-header">
                 <div id="name-button-row">
-                    <div>{personalFormData.fullName ? personalFormData.fullName : 'Full Name'}</div>
+                    <div id="cv-name"><b>{personalFormData.fullName ? personalFormData.fullName : 'Full Name'}</b></div>
                     <button type="button" className="edit-name" onClick={toggleEdit}>{edit ? 'CLOSE EDIT' : 'EDIT'}</button>
                 </div>
                 <div id="cv-personal">
@@ -42,14 +41,10 @@ export default function Header(){
             {edit && 
                 <div className="form-popup">
                     <form id="personal-form">
-                        <div className="personal-row">
-                            <input className = "personal" type="text" id = "fullName" name = "fullName" placeholder="Name" value={personalFormData.fullName} onChange={handleChange}/>
-                            <input className = "personal" type="text" id = "address" name = "address" placeholder="Address" value={personalFormData.address} onChange={handleChange}/>
-                        </div>
-                        <div className="personal-row">
-                            <input className = "personal" type="text" id = "phone" name = "phone" placeholder="Phone Number" value={personalFormData.phone} onChange={handleChange}/>
-                            <input className = "personal" type="text" id = "email" name = "email" placeholder="Email" value={personalFormData.email} onChange={handleChange}/>
-                        </div>
+                        <input className = "personal" type="text" id = "fullName" name = "fullName" placeholder="Name" value={personalFormData.fullName} onChange={handleChange}/>
+                        <input className = "personal" type="text" id = "address" name = "address" placeholder="Address" value={personalFormData.address} onChange={handleChange}/>
+                        <input className = "personal" type="text" id = "phone" name = "phone" placeholder="Phone Number" value={personalFormData.phone} onChange={handleChange}/>
+                        <input className = "personal" type="text" id = "email" name = "email" placeholder="Email" value={personalFormData.email} onChange={handleChange}/>
                     </form>
                 </div>
             }
