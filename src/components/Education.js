@@ -28,12 +28,12 @@ export default function Education(){
     return(
         <>
             <div className="section">
-                <h4>EDUCATION </h4>
+                <h5>EDUCATION </h5>
                 <button type="button" className="add-button" onClick={toggleEdit}>{edit ? 'CLOSE EDIT' : 'EDIT'}</button>
             </div>
             <div className="section-content">
                 <div className="section-top-row">
-                    <div>{educationFormData.school ? educationFormData.school : 'University of X'}</div>
+                    <div><b>{educationFormData.school ? educationFormData.school : 'University of X'}</b></div>
                     <div>{educationFormData.graduation ? educationFormData.graduation : 'Graduating June 2025'}</div>
                 </div>
                 <div>{educationFormData.degree ? educationFormData.degree : 'B.S. Computer Science'}</div>

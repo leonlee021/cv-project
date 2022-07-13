@@ -140,3 +140,13 @@ button{
     background-color: rgb(124, 124, 124);
     padding: 10px;
 }
+
+#projects-form{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 400px;
+    top: 500px;
+    background-color: rgb(124, 124, 124);
+    padding: 10px;
+}

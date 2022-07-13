@@ -28,15 +28,15 @@ export default function Experience(){
     return(
         <>
             <div className="section">
-                <h4>EXPERIENCE </h4>
+                <h5>EXPERIENCE </h5>
                 <button type="button" className="add-button" onClick={toggleEdit}>{edit ? 'CLOSE EDIT' : 'EDIT'}</button>
             </div>
             <div className="section-content">
                 <div className="section-top-row">
-                    <div>{experienceFormData.position ? experienceFormData.position : 'Software Engineer Intern'}</div>
+                    <div><em>{experienceFormData.position ? experienceFormData.position : 'Software Engineer Intern'}</em></div>
                     <div>{experienceFormData.date ? experienceFormData.date : 'May 2022 - August 2022'}</div>
                 </div>
-                <div>{experienceFormData.company ? experienceFormData.company : 'X Company'}</div>
+                <div><b>{experienceFormData.company ? experienceFormData.company : 'X Company'}</b></div>
                 <div>{experienceFormData.expDescription ? experienceFormData.expDescription : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus imperdiet nisl sed vestibulum.'}</div>
             </div>
             {edit && 
